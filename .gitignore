@@ -289,3 +289,6 @@ __pycache__/
 
 #Ignore Bower Libraries
 */wwwroot/lib/
+
+#Ignore Minified
+*.min.*
