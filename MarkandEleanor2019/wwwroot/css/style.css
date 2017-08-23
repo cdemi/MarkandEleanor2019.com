@@ -1,0 +1,24 @@
+﻿body {
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+}
+
+#heroBanner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6) ), url('../images/bannerHero.jpg');
+    background-position: bottom center;
+    background-size: cover;
+}
+
+    #heroBanner #siteName {
+        padding-top: 50vh;
+        font-family: 'Alex Brush', cursive;
+        font-size: 92pt;
+        line-height: 0.8;
+        text-align: center;
+        color: #ffffff;
+    }

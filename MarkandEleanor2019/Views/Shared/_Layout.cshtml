@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -14,9 +15,15 @@
     <meta name="theme-color" content="#e35c56">
 
     <title>Mark and Eleanor 2019</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Poppins" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet" />
+
 </head>
 <body>
-    @RenderBody()
+    <div class="wrapper">
+        @RenderBody()
+    </div>
 
 
     <script>
@@ -30,6 +37,8 @@
         ga('create', 'UA-75438054-4', 'auto');
         ga('send', 'pageview');
     </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
