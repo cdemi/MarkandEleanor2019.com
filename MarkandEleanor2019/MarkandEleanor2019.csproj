@@ -20,7 +20,6 @@
 
   <Target Name="PrepublishScript" BeforeTargets="PrepareForPublish">
     <Exec Command="bower install" />
-    <Exec Command="dotnet bundle" />
   </Target>
 
 </Project>
