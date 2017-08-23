@@ -1,0 +1,204 @@
+/* large desktop :1400px. */
+@media (min-width: 1400px) and (max-width: 2000px) {
+    .mainmenu ul#nav li {margin-right: 45px}
+    .nivo_text .slider-text-1 h1, .banner-text-wrapper .slider-text-1 h1 {font-size: 100px; line-height: 120px}
+    .nivo_text .slider-text-2 h2{font-size: 60px; line-height: 70px}
+    .slider-content.slider-text-3 {margin-top: 50px}
+    .slider-button, .default-button { padding: 12px 40px}
+    .single-about-content h3{font-size: 24px}
+    .single-about-content p{font-size: 13px} 
+    .single-about-icon{margin-right: 45px}
+    .plan-content h3 {font-size: 22px; line-height: 28px;}
+    .plan-content p {font-size: 14px;}
+    .single-plan .ptb-20 {padding-bottom: 25px; padding-top: 25px}
+    .single-blog-left h2{font-size: 30px}
+    .single-blog-left h2 span{font-size: 42px; margin-top: 15px}
+    .single-blog-right h3{font-size: 26px; line-height: 30px}
+    .single-about-icon {margin-right: 30px}
+    .sin-testiText > p {font-size: 14px}
+    .single-schedule-info h4{font-size: 30px;  margin-top: 35px; line-height: 35px}
+    .bar {left: 2.5%; top: 68%;}
+    .slider-wrap.three .nivo_text .slider-text-1 h1, .banner-text-wrapper .slider-text-1 h1 {font-size: 100px}
+    .slider-wrap.three .nivo_text .slider-text-2 h3 {font-size: 30px}
+    .single-product-title h1{font-size: 150px; line-height: 150px}
+    .single-product-title h2{font-size: 60px}
+    .six .nivo_text h1, .six .nivo_text h2 {font-size: 110px; line-height: 110px}
+    .slider-wrap.three .nivo_text .slider-text-1 h1 {font-size: 100px; line-height: 65px}
+    .slider-wrap.three .nivo_text .slider-text-2 h3 {font-size: 30px}
+
+    
+}
+/* desktop 1200px to 1600px */
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .consultation-info.default-title {margin-left: 20px}
+    .as-mainwrapper.wrapper-boxed .mainmenu ul li:nth-child(8) {display: none}
+    .header-top-right ul li:last-child{display: none}
+    .header-top-right ul li:nth-child(2){margin-right: 0px}
+    .single-about.plr-40.ptb-50{padding: 30px 20px}
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+.container {width:970px}
+    .as-mainwrapper.wrapper-boxed {width: 970px}
+    .as-mainwrapper.wrapper-boxed .stick {width: 970px}
+    .header-top-right ul li:nth-child(2), .header-top-right ul li:last-child{display: none}
+    .header-top-right ul li:first-child{margin-right: 0px}
+    .location-area .location-content.ptb-80 {padding: 20px 35px}
+    .location-content {height: 480px}
+    .three .slider-content.slider-icon img {left: 40%; top: 32%}
+    .timer-grid::before, .timer-grid::after {background: none}
+    .attending-area-content.ptb-60 {padding: 30px 0}
+    .single-blog-content.mt-110 {margin-top: 60px}
+    .single-product-title h1 {font-size: 80px}
+    .discount-code input {width: 395px}
+    .comment-form input:first-child, .comment-form input:nth-child(2) {width: 48.4%}
+    .mm-5-column {left: -190px}
+}
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+.container {width:765px}
+    .as-mainwrapper.wrapper-boxed, .as-mainwrapper.wrapper-boxed .portfolio_gallery_area, .as-mainwrapper.wrapper-boxed .stick {width:750px}
+    .as-mainwrapper.wrapper-boxed .main-header-area.stick{position:inherit}
+    .main-header-area.stick {position: inherit}
+    .mobile-menu-area {display:block}
+    .mainmenu, .zoomContainer {display: none}
+    .header-right-wrapper {padding-top: 12px}
+    .search {top: 65px}
+    .top-login-cart ul li ul.submenu-mainmenu, .account-usd > ul > li > ul.submenu-mainmenu {top: 53px}
+    .account-usd > ul > li > ul.submenu-mainmenu {top: 51px}
+    .testimonial-left h2, .testimonial-left h1.happy {font-size: 75px}
+    .testimonial-text-slider.ptb-118 {padding-bottom: 114px; padding-top: 114px}
+    .testimonial-image-slider-two {width: 60%}
+    .home-blog.two .single-blog-content.mt-110, .home-blog.three .single-blog-content.mt-110, .home-blog.five .single-blog-content.mt-110{margin-top: 0px}
+    .video-text, .parallax-text {margin-top: 22%}
+    .attending-area-content {left: 32px; top: 32px}
+    .two .nivo-directionNav, .one .nivo-directionNav {display: none}
+    .header-area.three .main-header-area {position: inherit; background: rgba(173, 224, 213, 0.6)}
+    .header-area.three .main-header-area.ptb-45{padding: 25px 0}
+    .bride-groom-area .groom-section.ptb-60{padding-left: 20px; padding-right: 20px}
+    .location-area .location-banner .location-content.ptb-80.plr-35{padding: 10px}
+    .wedding-schedule-area .section-title h2 {margin-bottom: 20px}
+    .footer-menu ul li, .footer-social ul li {margin: 0 20px}
+    .timer-grid::before, .timer-grid::after {background: none}
+    .timer, .header-top-area.ptb-10.hidden-xs {padding: 0px}
+    .sche-four-right.pull-right {float: left !important; margin-top: 50px}
+    .four .single-gallery {width: 33.3333%}
+    .header-area.five {background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0; position: inherit}
+    .attending-area-content.text-center.ptb-60{padding: 20px}
+    .attending-area-content  h2.pb-65{padding-bottom: 20px}
+    .attending-area form input.mb-30{margin-bottom: 20px}
+    .gallery-area h2 {font-size: 30px; line-height: 31px}
+    .six .logo.text-center {float: left}
+    .slider-wrap.seven .nivo_text .slider-text-2 h2, .discovery-area .col-md-6 .single-product:last-child .single-product-title h1 {font-size: 70px}
+    .continue.mb-50 {margin-bottom: 0}
+    .discount-code input {width: 310px}
+    .discount-code input[type="submit"] {right: 65px}
+    .comment-form input:first-child, .comment-form input:nth-child(2) {width: 47.8%}
+    .pagination-area.text-center.ptb-60 {display: inline-block}
+    .our-story-area.four.story .our-story-img > img, .product-bar-area.sidebar .shop-left-sidebar { margin-bottom: 30px}
+    .our-story-area.four.story .our-story-img > img, .photo-plan-pic > img{width: 100%}
+    .our-story-area.four .story-date {left: 40%}
+    
+}
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.container {width:300px}
+    .main-header-area.stick {position: inherit}
+    .as-mainwrapper.wrapper-boxed, .as-mainwrapper.wrapper-boxed .stick, .as-mainwrapper.wrapper-boxed .portfolio_gallery_area, .as-mainwrapper.wrapper-boxed .gallery, .as-mainwrapper.wrapper-boxed .gallery {width:300px}
+    .mobile-menu-area {display:block}
+    .mainmenu, .nivo-directionNav, .zoomContainer, .portfolio-detail-info, .as-mainwrapper.wrapper-boxed .slick-prev::before, .slick-next::before, .two .nivo-directionNav, .one .nivo-directionNav, .slider-wrap.three .timer{display: none}
+    .logo {text-align: center}
+    .nivo-caption {top: 4%}
+    .fixed-background{padding: 85px 0}
+    .nivo_text .slider-text-1 h1, .fixed_text .slider-text-1 h1, .banner-text-wrapper .slider-text-1 h1{font-size: 30px; line-height: 40px}
+    .nivo_text .slider-text-1 h1, .banner-text-wrapper .slider-text-1 h1 {font-size: 30px}
+    .section-title h2 {font-size: 21px; line-height: 21px}
+    .section-title h2::after {top: 40px}
+    .about-content.plr-80.ptb-55 {padding-left: 5px;padding-right: 5px; padding-bottom: 0}
+    .single-about, .plan-area .row .col-md-3:nth-child(6), .plan-area .row .col-md-3:nth-child(7), .photo-plan-area .row .col-md-3:nth-child(6), .photo-plan-area .row .col-md-3:nth-child(7), .discovery-area .col-md-6 .single-product{margin-top: 30px}
+    .home-blog.pt-95{padding-top:0}
+    .shortcodes-area .home-blog.pt-95{padding-top: 95px}
+    .nivo_text {margin-top: 20%}
+    .video-text{display: none}
+    .home-blog .section-title.pb-80, .new-products-area .section-title.text-center.pb-80, .top-treding-area .single-product, .top-treding-area .section-title{padding-bottom: 30px}
+    .single-blog-right h3 a {font-size: 12px}
+    .footer-menu ul li, .footer-social ul li {margin: 0 7px}
+    .single-plan img, .single-photo img, .single-blog-img img, .testimonial-image-slider-two, .single-gallery > img, .groom-pic-container, .groom-info, .gall-img img, .single-product-img > img, .single-slider-bottom > img, .blog-form-left, .blog-form-right, .comment-form input:first-child, .comment-form input:nth-child(2), .about-content-img > img, .our-story-area.four.story .our-story-img > img, .photo-plan-pic > img, .description-tab-menu ul li, .primary-image, .party-left, .party-right{width: 100%}
+    .about-content-two .section-title h2.mb-83, .sche-img{margin-bottom:40px}
+    .pho-pic-left, .our-story-area.four .our-story-img, .three .single-blog:first-child .single-blog-img, .groom-pic-container, .groom-info, .four .single-gallery, .gallery-area.five h2.mb-83, .single-slider-bottom, .discount-code, .contact-area .single-address, .party-left {margin-bottom: 30px}
+    .pho-toof-area-two .row .col-md-4:last-child .pho-pic-left, .wedding-schedule-area .section-title h2{margin-bottom: 0px}
+    .home-blog.two .single-blog-content.mt-110{margin-top: 50px}
+    .home-blog.two .single-blog.mt-50, .testimonial-image-slider-two .sin-opacity, .three .single-blog-content.mt-110, .five .single-blog.mt-50, .discovery-area .row.mt-50{margin-top: 0}
+    .sin-testiImage.slick-current .sin-opacity {height: 110px; width: 110px}
+    .header-area.three .main-header-area {position: inherit; background: rgba(173, 224, 213, 0.6)}
+    .header-area.three .main-header-area.ptb-45{padding: 25px 0}
+    .slider-wrap.three .nivo_text .slider-text-1 h1 {font-size: 50px; line-height: 150px}
+    .bride-groom-area .groom-section.ptb-60{padding-left: 20px; padding-right: 20px}
+    .sche-four-left.pull-left.text-center{float: inherit; text-align: center;}
+    .bride-groom-area .groom-section:first-child, .bridemaids-area .single-bridemaid:first-child, .wedding-schedule-area .single-schedule{margin-bottom: 50px}
+    .sche-img.mr-40.pull-left{float: inherit; margin-right: 0; text-align: center;}
+    .single-about.plr-40, .single-about.plr-45{padding-left: 20px; padding-right: 20px}
+    .location-content {height: 650px; left: 2%; position: inherit; top: 7%; width: 261px}
+    .bar, .sche-form h3::after {background: none}
+    .wedding-schedule-area .section-title{margin-top: 50px}
+    .wedding-schedule-area .section-title h3 {font-size: 28px; line-height: 32px}
+    .main-header-area.four .logo, .sche-info.pull-right {float: none !important}
+    .sche-info .sche-info, .sche-four-right.pull-right, .our-story-img.five, .five .single-blog-content.mt-110 {margin-top: 30px}
+    .sche-form.ptb-100 {padding: 20px}
+    .sche-form h3 {font-size: 20px; margin-bottom: 20px}
+    form.plr-50 {padding: 0}
+    .sche-form form input {margin-bottom: 15px}
+    .groom-info.groom-content.ptb-100.plr-50 {padding: 72px 30px}
+    .groom-info > h2 {font-size: 35px; line-height: 50px}
+    .our-story-area.four .section-title.text-center.mb-80,{padding-bottom: 0; margin-bottom: 60px }
+    .our-story-area.four.ptb-100 {padding: 0 0 30px}
+    .gallery-area.four .section-title, .slider-bottom-area.ptb-80{padding-bottom: 0}
+    .our-story-content.fix.pb-140, .party-area.pb-95 {padding-bottom: 50px}
+    .header-area.five {background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0; position: inherit}
+    .five .logo.pull-left {float: none !important}
+    .schedule-five .section-title.text-center.mb-70{margin-bottom: 0}
+    .our-story-area.five.ptb-100 {padding: 0 0 30px}
+    .our-story-area.five .section-title.pb-120{padding-bottom: 50px}
+    .our-story-area.five .story-date {left: 42%}
+    .five .single-story::after {background: none}
+    .home-blog.five.ptb-100{padding: 50px 0}
+    .six .nivo_text h1 {font-size: 30px; line-height: 30px}
+    .slider-bottom-content h2 {font-size: 35px}
+    .slider-wrap.seven .nivo_text .slider-text-1 h1{font-size: 50px}
+    .seven .nivo-caption {top: 20%}
+    .discovery-area .section-title h1 {font-size: 30px; line-height: 40px}
+    .discovery-area.ptb-80.plr-100.mt-180 {padding: 100px 30px}
+    .discovery-area .single-product-title h1 {font-size: 50px; line-height: 60px}
+    .continue.mb-50 {margin-bottom: 0}
+    .blog-form-right, ul.children_comment {padding-left: 0}
+    .update-check.pull-right {float: none !important; margin-top: 30px}
+    .discount-code input {width: 160px}
+    .discount-code input[type="submit"] {right: 50px}
+    .cart-table table th {padding: 8px 30px}
+    .update-check.pull-right a:last-child, .shop-right-section .bar-left{margin-top: 30px}
+    .comment-form input:nth-child(2) {margin-left: 0px}
+    .pagination-area.text-center.ptb-60 {display: inline-block}
+    .bar-middle.text-center, .bar-right.pull-right {float: left !important; margin-top: 20px}
+    .product-thumb {left: 20%}
+    .modal-product .product-info {padding-left: 0; width: 100%}
+    .quick-add-to-cart .single_add_to_cart_button {padding: 0px 10px}
+    
+    
+}
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {width:460px}
+    .as-mainwrapper.wrapper-boxed {width:450px}
+    .mobile-menu-area {display:block}
+    .mainmenu {display: none}
+    .our-story-area.five .story-date {left: 45%}
+    .location-content {height: 530px; left: 0%; position: inherit; width: 422px}
+    .six .nivo_text h1 {font-size: 70px; line-height: 70px}
+    .discovery-area.ptb-80.plr-100.mt-180 {padding: 100px 80px}
+    .discovery-area .single-product-cart {left: 47%}
+    .single-slider-bottom img, .single-product-img img, .single-gallery > img{width: 100%}
+    .discount-code input {width: 325px}
+    .discount-code input[type="submit"] {right: 70px}
+    .groom-info.groom-content.ptb-100.plr-50 {padding: 120px 30px}
+    .sche-four-left.pull-left.text-center {float: none !important; text-align: center}
+}

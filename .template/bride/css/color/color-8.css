@@ -1,0 +1,156 @@
+.section-title h2 {
+    color: #607D8B;
+}
+.header-top-area {
+    background-color: #607D8B;
+}
+
+.mainmenu ul#nav > li:hover > a {
+    color: #607D8B;
+}
+.mainmenu ul#nav li ul.sub-menu > li:hover > a, .mega-menu:hover > a {
+    color: #607D8B;
+}
+.search-form {
+    border-top: 1px solid #607D8B;
+}
+.search-menu:hover {color: #607D8B;}
+
+.top-login-cart ul li:hover a, .account-usd > ul > li:hover > a {
+    color: #607D8B;
+}
+.top-login-cart ul li span.cn{
+    background: #607D8B; 
+}
+.sub-total-cart > a.view-cart:hover, .sub-total-cart > a.view-cart.active {
+    background: #607D8B none repeat scroll 0 0;
+    border: 1px solid #607D8B;
+}
+.nivo_text .slider-text-1 h1 span {
+    color: #607D8B;
+}
+.slider-button, .default-button {
+    background: #607D8B; 
+}
+.slider-button:hover, .default-button:hover {
+    color: #607D8B;
+}
+.single-about:hover{
+    border: 1px solid #607D8B;
+}
+.single-about:hover .single-about-content h3{
+    color: #607D8B;
+}
+.single-about:hover .single-about-content h3:after{
+    background: #607D8B;
+}
+.plan-zoom{
+    background: #607D8B none repeat scroll 0 0;
+}
+.view-all:hover{
+    background: #607D8B;
+}
+.view-all-area:hover:after{
+    background: #607D8B;
+}
+.testimonial-right{
+    background: #607D8B;
+}
+.single-blog-left h2{
+    color: #607D8B;
+}
+.single-blog-left h2:after{
+    border-right: 2px dotted #607D8B;  
+}
+.blog-comment ul li:hover a, a.read-more:hover, .single-blog-right h3:hover a, .footer-menu ul li:hover a{
+    color: #607D8B;
+}
+.footer-area p a:hover{
+    color: #607D8B;
+}
+.footer-social ul li:hover i, .footer-social ul li.active i{
+    background: #607D8B;
+}
+.shop-buttons a.more:hover {
+    background: #607D8B;
+    border: 1px solid #607D8B;
+}
+.slider-wrap.seven .slider-button:hover, .slider-wrap.seven .default-button:hover {
+    background: #607D8B none repeat scroll 0 0;
+}
+.breadcrumb-area ul li:hover, .breadcrumb-area ul li:hover a{color: #607D8B}
+.photo-plan-content h3:hover a{
+    color: #607D8B;
+}
+.photo-plan-content h2{
+    color: #607D8B;
+}
+.groom-bride-area.story .groom-info:nth-child(2) {
+    background: #607D8B none repeat scroll 0 0;
+}
+.our-story-area.story .section-title h2{color: #607D8B}
+.our-story-area.story .single-story-icon i, .story-date, .our-story-area.story .single-story-info h2:hover a {
+    color: #607D8B;
+}
+li.filter.active {color: #607D8B}
+.page-banner-area.sidebar .banner-content h2{
+    color: #607D8B;
+}
+.product-thumb ul li:hover {
+    border: 3px solid #607D8B;
+} 
+.product-detail.single-product-info ul.cart-metalic li:hover a.add-to-cart, .product-detail .shop-buttons ul.cart-metalic li:hover a  {
+    background: #607D8B;
+    border: 2px solid #607D8B;
+}
+.blog-title p{
+    color: #607D8B;
+}
+.blog-title h2 a:hover{
+    color: #607D8B;
+}
+.blog-title ul li i{
+    color: #607D8B;
+}
+.blog-img-content a.continue{
+    color: #607D8B;
+    border: 1px solid #607D8B;
+}
+.blog-img-content a.continue:hover{
+    background: #607D8B;
+    border: 1px solid #607D8B;
+}
+.blog-email input:last-child:hover{
+    background: #607D8B;
+}
+.post-info h4 a:hover{
+    color: #607D8B;
+}
+.tag span:hover{
+    background: #607D8B;
+}
+.blog-details-form button, .leave-comment button{
+    background: #607D8B;
+}
+.preview-2 .nivo-controlNav a:hover, .preview-2 .nivo-controlNav a.active {
+    background: #607D8B none repeat scroll 0 0;
+}
+.single-address i{
+    color: #607D8B;  
+}
+.discount-code input[type="submit"]:hover {
+    background: #607D8B none repeat scroll 0 0;
+}
+.registered-user.guest-or-user input:hover{
+    color: #607D8B;
+}
+.single-order-info h6 a:hover{
+    color: #607D8B;
+}
+.modal-product .product-info .price-box .special-price {
+    color: #607D8B ;
+}
+.quick-add-to-cart .single_add_to_cart_button {
+    background: #607D8B none repeat scroll 0 0;
+}
+.modal-product .product-info .see-all:hover { color: #607D8B }
