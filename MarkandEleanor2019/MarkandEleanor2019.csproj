@@ -18,4 +18,9 @@
     <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
+  <Target Name="PrepublishScript" BeforeTargets="PrepareForPublish">
+    <Exec Command="bower install" EnvironmentVariables="Path=$(ExternalToolsPath)" />
+    <Exec Command="dotnet bundle" />
+  </Target>
+
 </Project>
