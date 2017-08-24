@@ -9,13 +9,13 @@
 #heroBanner {
     width: 100%;
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6) ), url('../images/bannerHero.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6) ), url('../images/bannerHero2.jpg');
     background-position: bottom center;
     background-size: cover;
 }
 
     #heroBanner #siteName {
-        padding-top: 50vh;
+        padding-top: 20vh;
         font-family: 'Alex Brush', cursive;
         font-size: 92pt;
         line-height: 0.8;
