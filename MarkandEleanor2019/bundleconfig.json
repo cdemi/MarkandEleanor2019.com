@@ -12,7 +12,6 @@
   {
     "outputFileName": "wwwroot/js/site.min.js",
     "inputFiles": [
-      "wwwroot/lib/moment/moment.js",
       "wwwroot/js/site.js"
     ],
     // Optionally specify minification options
