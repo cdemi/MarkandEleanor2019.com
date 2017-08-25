@@ -2,6 +2,7 @@
   "name": "asp.net",
   "private": true,
   "dependencies": {
-    "normalize-css": ""
+    "normalize-css": "",
+    "moment": ""
   }
 }
