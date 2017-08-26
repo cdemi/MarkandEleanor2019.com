@@ -27,11 +27,11 @@
     {
     <script>
         $(document).ready(function () {
-            $("#heroBanner #counter").countdown("2019/05/11", {
+            $("#heroBanner #counter").countdown("2019/05/11 18:30:00", {
                 elapse: false,
                 precision: 60000
             }).on('update.countdown', function (event) {
-                $(this).html(event.strftime('%-w week%!w %-d day%!d'));
+                $(this).html(event.strftime('%-D day%!D'));
                 }).countdown('start');
         });
     </script>
