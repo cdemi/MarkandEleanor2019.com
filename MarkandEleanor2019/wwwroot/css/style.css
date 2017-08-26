@@ -9,7 +9,7 @@
 #heroBanner {
     width: 100%;
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6) ), url('../images/bannerHero2.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7) ), url('../images/bannerHero2.jpg');
     background-position: bottom center;
     background-size: cover;
 }
@@ -17,8 +17,45 @@
     #heroBanner #siteName {
         padding-top: 20vh;
         font-family: 'Alex Brush', cursive;
-        font-size: 92pt;
+        font-size: 12vw;
         line-height: 0.8;
         text-align: center;
         color: #ffffff;
     }
+
+    #heroBanner #counter {
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Slabo 27px', serif;
+        font-size: 5vw;
+        padding-top: 12vh;
+    }
+
+    #heroBanner #rsvpButton {
+        width: min-content;
+        margin: 0 auto;
+        padding-top: 23vh;
+    }
+
+        #heroBanner #rsvpButton button {
+            cursor: pointer;
+            background: #E9818C;
+            padding: 15px 50px;
+            border: none;
+            text-transform: uppercase;
+            display: inline-block;
+            color: #fff;
+            border-radius: 20px;
+            margin-top: 10px;
+            -webkit-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+        }
+
+            #heroBanner #rsvpButton button:hover {
+                color: #333333;
+            }
+
+            #heroBanner #rsvpButton button:focus {
+                outline:0;
+            }
