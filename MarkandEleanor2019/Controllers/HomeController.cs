@@ -13,10 +13,5 @@ namespace MarkandEleanor2019.Controllers
         {
             return View();
         }
-
-        public IActionResult Preview()
-        {
-            return View();
-        }
     }
 }

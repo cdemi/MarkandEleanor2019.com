@@ -1,3 +1,33 @@
-﻿<div style="text-align: center;">
-    <img src="~/images/icon-min.png" width="200" />
+﻿<div id="heroBanner">
+    <header></header>
+    <nav>
+
+    </nav>
+    <div id="siteName">
+        Mark &amp; Eleanor
+    </div>
+    <div id="counter">
+        &nbsp;
+    </div>
+    <div id="rsvpButton">
+        <button>Join Us</button>
+    </div>
 </div>
+<div class="content">
+    some text
+</div>
+
+
+@section Scripts
+    {
+    <script>
+        $(document).ready(function () {
+            $("#heroBanner #counter").countdown("2019/05/11", {
+                elapse: false,
+                precision: 60000
+            }).on('update.countdown', function (event) {
+                $(this).html(event.strftime('%-w week%!w %-d day%!d'));
+                }).countdown('start');
+        });
+    </script>
+}
