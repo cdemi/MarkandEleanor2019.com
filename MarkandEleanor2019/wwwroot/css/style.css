@@ -59,3 +59,21 @@
             #heroBanner #rsvpButton button:focus {
                 outline:0;
             }
+
+.juicer-feed h1{
+    display:none !important;
+}
+
+#hashTag h2 {
+    text-align: center;
+    color: #ffffff;
+    background-color: #E9818C;
+    margin: 0;
+    padding: 25px;
+    font-size: 26pt;
+}
+
+    #hashTag h2 a {
+        color: #ffffff;
+        text-decoration:none;
+    }
