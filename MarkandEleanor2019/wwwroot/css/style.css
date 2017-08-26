@@ -63,6 +63,9 @@
 .juicer-feed h1{
     display:none !important;
 }
+.j-stack > li.feed-item.juicer.image-post:not(.instagram):not(.facebook){
+    display:none;
+}
 
 #hashTag h2 {
     text-align: center;
