@@ -37,7 +37,7 @@
         padding-top: 23vh;
     }
 
-        #heroBanner #rsvpButton button {
+        #heroBanner #rsvpButton button,a {
             cursor: pointer;
             background: #E9818C;
             padding: 15px 50px;
@@ -50,6 +50,7 @@
             -webkit-transition: all 0.5s ease 0s;
             -o-transition: all 0.5s ease 0s;
             transition: all 0.5s ease 0s;
+            text-decoration:none;
         }
 
             #heroBanner #rsvpButton button:hover {
