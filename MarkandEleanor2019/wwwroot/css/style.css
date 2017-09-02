@@ -50,7 +50,7 @@
             -webkit-transition: all 0.5s ease 0s;
             -o-transition: all 0.5s ease 0s;
             transition: all 0.5s ease 0s;
-            text-decoration:none;
+            text-decoration: none;
         }
 
             #heroBanner #rsvpButton button:hover {
@@ -72,16 +72,31 @@
         display: none;
     }
 
-    #hashTag h2 {
-        text-align: center;
+h2 {
+    text-align: center;
+    color: #ffffff;
+    background-color: #E9818C;
+    margin: 0;
+    padding: 25px;
+    font-size: 26pt;
+}
+
+    h2 a {
         color: #ffffff;
-        background-color: #E9818C;
-        margin: 0;
-        padding: 25px;
-        font-size: 26pt;
+        text-decoration: none;
     }
 
-        #hashTag h2 a {
-            color: #ffffff;
-            text-decoration: none;
-        }
+.gm-style-iw h1, .gm-style-iw h2 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    background-color: transparent;
+}
+.gm-style-iw h1 {
+    font-size: 16px;
+}
+
+.gm-style-iw h2 {
+    font-size: 15px;
+    color: #747474;
+}
