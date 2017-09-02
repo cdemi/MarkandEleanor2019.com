@@ -282,9 +282,12 @@
             });
 
             map.fitBounds(bounds);
-
+            var width = $(window).width();
             $(window).on('resize', function () {
-                initMap();
+                if ($(this).width() != width) {
+                    width = $(this).width();
+                    initMap();
+                }
             });
         }
     </script>
