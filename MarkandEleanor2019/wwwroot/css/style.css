@@ -21,6 +21,9 @@
         line-height: 0.8;
         text-align: center;
         color: #ffffff;
+        margin: 0 0;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
     }
 
     #heroBanner #counter {
@@ -72,6 +75,7 @@
         display: none;
     }
 
+
 h2 {
     text-align: center;
     color: #ffffff;
@@ -79,6 +83,7 @@ h2 {
     margin: 0;
     padding: 25px;
     font-size: 26pt;
+    font-family: 'Slabo 27px', serif;
 }
 
     h2 a {
