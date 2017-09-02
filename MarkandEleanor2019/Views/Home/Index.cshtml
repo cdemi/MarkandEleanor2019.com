@@ -282,6 +282,10 @@
             });
 
             map.fitBounds(bounds);
+
+            $(window).on('resize', function () {
+                initMap();
+            });
         }
     </script>
 
