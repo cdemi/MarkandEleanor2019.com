@@ -54,12 +54,12 @@
                 {
                     position: new google.maps.LatLng(35.826891, 14.527366),
                     markerUrl: "@Url.Content("~/images/map_markers/church-min.png")",
-                    info: '<h1>Birżebbuġa Parish Church</h1><h2>Ceremony</h2>Starts at 18:00.<br/><a href="https://www.google.com/maps/dir/Current+Location/Birżebbuġa Parish Church" target="_blank">How to arrive</a>'
+                    info: '<h1>Birżebbuġa Parish Church</h1><h2>Ceremony</h2>Starts at 18:00.<br/><a href="https://www.google.com/maps/dir/Current+Location/Birżebbuġa Parish Church" target="_blank">How to get there</a>'
                 },
                 {
                     position: new google.maps.LatLng(35.858748, 14.397613),
                     markerUrl: "@Url.Content("~/images/map_markers/cake-min.png")",
-                    info: '<h1>Chateau Buskett</h1><h2>Reception</h2>Starts at 20:00.<br/><a href="https://www.google.com/maps/dir/Current+Location/Chateau Buskett" target="_blank">How to arrive</a>'
+                    info: '<h1>Chateau Buskett</h1><h2>Reception</h2>Starts at 20:00.<br/><a href="https://www.google.com/maps/dir/Current+Location/Chateau Buskett" target="_blank">How to get there</a>'
                 }
             ];
             var church = { lat: 35.826891, lng: 14.527366 };
@@ -263,7 +263,8 @@
                     position: location.position,
                     icon: {
                         url: location.markerUrl,
-                        scaledSize: new google.maps.Size(100, 100)
+                        scaledSize: new google.maps.Size(100, 100),
+                        anchor: new google.maps.Point(50, 50)
                     },
                     map: map
                 });
