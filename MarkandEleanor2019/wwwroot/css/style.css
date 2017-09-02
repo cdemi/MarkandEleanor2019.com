@@ -56,12 +56,8 @@
             text-decoration: none;
         }
 
-            #heroBanner #rsvpButton button:hover {
+            #heroBanner #rsvpButton a:hover {
                 color: #333333;
-            }
-
-            #heroBanner #rsvpButton button:focus {
-                outline: 0;
             }
 
 #hashTag {
