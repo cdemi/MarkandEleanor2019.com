@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -28,6 +29,7 @@
         <link href="~/css/style.min.css" rel="stylesheet" asp-append-version="true" />
     </environment>
 
+    @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
     <div class="wrapper">
