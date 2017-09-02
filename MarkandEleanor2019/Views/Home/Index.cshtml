@@ -53,12 +53,12 @@
             var locations = [
                 {
                     position: new google.maps.LatLng(35.826891, 14.527366),
-                    marker: 'church',
+                    markerUrl: "@Url.Content("~/images/map_markers/church-min.png")",
                     info: '<h1>Birżebbuġa Parish Church</h1><h2>Ceremony</h2>Starts at 18:00.<br/><a href="https://www.google.com/maps/dir/Current+Location/Birżebbuġa Parish Church" target="_blank">How to arrive</a>'
                 },
                 {
                     position: new google.maps.LatLng(35.858748, 14.397613),
-                    marker: 'reception',
+                    markerUrl: "@Url.Content("~/images/map_markers/cake-min.png")",
                     info: '<h1>Chateau Buskett</h1><h2>Reception</h2>Starts at 20:00.<br/><a href="https://www.google.com/maps/dir/Current+Location/Chateau Buskett" target="_blank">How to arrive</a>'
                 }
             ];
@@ -261,6 +261,10 @@
             locations.forEach(location => {
                 var marker = new google.maps.Marker({
                     position: location.position,
+                    icon: {
+                        url: location.markerUrl,
+                        scaledSize: new google.maps.Size(100, 100)
+                    },
                     map: map
                 });
                 bounds.extend(marker.position);
