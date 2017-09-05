@@ -31,7 +31,7 @@
         text-align: center;
         color: #ffffff;
         font-family: 'Roboto Mono', monospace;
-        font-size: 5vw;
+        font-size: 3vw;
         padding-top: 12vh;
     }
 
@@ -80,7 +80,7 @@ h2 {
     margin: 0;
     padding: 25px;
     font-size: 26pt;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
 }
 
     h2 a {
