@@ -30,7 +30,7 @@
     #heroBanner #counter {
         text-align: center;
         color: #ffffff;
-        font-family: 'Slabo 27px', serif;
+        font-family: 'Roboto Mono', monospace;
         font-size: 5vw;
         padding-top: 12vh;
     }
@@ -80,7 +80,7 @@ h2 {
     margin: 0;
     padding: 25px;
     font-size: 26pt;
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
     h2 a {
