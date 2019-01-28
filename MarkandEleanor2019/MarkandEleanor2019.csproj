@@ -1,9 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <ApplicationInsightsResourceId>/subscriptions/09f7beaa-8276-4735-9c70-3149ad6435df/resourcegroups/MarkandEleanor2019/providers/microsoft.insights/components/MarkandEleanor2019</ApplicationInsightsResourceId>
     <ApplicationInsightsAnnotationResourceId>/subscriptions/09f7beaa-8276-4735-9c70-3149ad6435df/resourcegroups/MarkandEleanor2019/providers/microsoft.insights/components/MarkandEleanor2019</ApplicationInsightsAnnotationResourceId>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,7 +14,7 @@
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="2.8.391" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.5.1" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
   <ItemGroup>
