@@ -61,7 +61,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Poppins|Roboto+Mono|Roboto+Slab" rel="stylesheet">
 
     <environment names="Development">
-        <link href="~/lib/normalize-css/normalize.css" rel="stylesheet" />
+        <link href="~/lib/normalize/normalize.css" rel="stylesheet" />
         <link href="~/css/style.css" rel="stylesheet" />
     </environment>
     <environment names="Staging,Production">
@@ -77,37 +77,13 @@
 
 
     <environment names="Development">
-        <script src="~/lib/jQuery/dist/jquery.js"></script>
-        <script src="~/lib/moment/moment.js"></script>
-        <script src="~/lib/moment-timezone/builds/moment-timezone-with-data-2012-2022.min.js"></script>
-        <script src="~/lib/jquery.countdown/dist/jquery.countdown.js"></script>
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/moment.js/moment.js"></script>
+        <script src="~/lib/moment-timezone/moment-timezone-with-data-2012-2022.js"></script>
+        <script src="~/lib/jquery.countdown/jquery.countdown.js"></script>
         <script src="~/js/site.js"></script>
     </environment>
     <environment names="Staging,Production">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                crossorigin="anonymous"
-                asp-fallback-src="~/lib/jQuery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"
-                integrity="sha256-1hjUhpc44NwiNg8OwMu2QzJXhD8kcj+sJA3aCQZoUjg="
-                crossorigin="anonymous"
-                asp-fallback-src="~/lib/moment/min/moment.min.js"
-                asp-fallback-test="window.moment">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.13/moment-timezone-with-data-2012-2022.min.js"
-                integrity="sha256-+5qLxtbk4c2md6Wr70zMmahTHwH+CoFueQVQcRRSusg="
-                crossorigin="anonymous"
-                asp-fallback-src="~/lib/moment-timezone/builds/moment-timezone-with-data-2012-2022.min.js"
-                asp-fallback-test="window.moment.tz">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"
-                integrity="sha256-Ikk5myJowmDQaYVCUD0Wr+vIDkN8hGI58SGWdE671A8="
-                crossorigin="anonymous"
-                asp-fallback-src="~/lib/jquery.countdown/dist/jquery.countdown.min.js"
-                asp-fallback-test="window.jQuery().countdown">
-        </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
     @RenderSection("Scripts", required: false)

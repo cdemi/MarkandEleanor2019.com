@@ -5,13 +5,17 @@
     "outputFileName": "wwwroot/css/style.min.css",
     // An array of relative input file paths. Globbing patterns supported
     "inputFiles": [
-      "wwwroot/lib/normalize-css/normalize.css",
+      "wwwroot/lib/normalize/normalize.css",
       "wwwroot/css/style.css"
     ]
   },
   {
     "outputFileName": "wwwroot/js/site.min.js",
     "inputFiles": [
+      "wwwroot/lib/jquery/jquery.js",
+      "wwwroot/lib/moment.js/moment.js",
+      "wwwroot/lib/moment-timezone/moment-timezone-with-data-2012-2022.js",
+      "wwwroot/lib/jquery.countdown/jquery.countdown.js",
       "wwwroot/js/site.js"
     ],
     // Optionally specify minification options
