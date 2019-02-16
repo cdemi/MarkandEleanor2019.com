@@ -13,8 +13,6 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: bower install
-  workingDirectory: MarkandEleanor2019
 - script: dotnet publish --configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)
   displayName: dotnet publish
 - task: PublishBuildArtifacts@1

@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "cdnjs",
+      "library": "normalize@8.0.1",
+      "destination": "wwwroot/lib/normalize/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "moment.js@2.24.0",
+      "destination": "wwwroot/lib/moment.js/",
+      "files": [
+        "moment.min.js",
+        "moment.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "moment-timezone@0.5.23",
+      "destination": "wwwroot/lib/moment-timezone/",
+      "files": [
+        "moment-timezone-with-data-2012-2022.min.js",
+        "moment-timezone-with-data-2012-2022.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery.countdown@2.2.0",
+      "destination": "wwwroot/lib/jquery.countdown/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery@3.3.1",
+      "destination": "wwwroot/lib/jquery/"
+    }
+  ]
+}
