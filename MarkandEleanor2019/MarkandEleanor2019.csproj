@@ -28,6 +28,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\js\azurestoragejs-2.10.102\bundle\azure-storage.blob.js" />
+    <None Include="wwwroot\js\azurestoragejs-2.10.102\bundle\azure-storage.blob.min.js" />
+    <None Include="wwwroot\js\azurestoragejs-2.10.102\bundle\azure-storage.file.js" />
+    <None Include="wwwroot\js\azurestoragejs-2.10.102\bundle\azure-storage.file.min.js" />
+    <None Include="wwwroot\js\azurestoragejs-2.10.102\bundle\azure-storage.queue.js" />
+    <None Include="wwwroot\js\azurestoragejs-2.10.102\bundle\azure-storage.queue.min.js" />
+    <None Include="wwwroot\js\azurestoragejs-2.10.102\bundle\azure-storage.table.js" />
+    <None Include="wwwroot\js\azurestoragejs-2.10.102\bundle\azure-storage.table.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
