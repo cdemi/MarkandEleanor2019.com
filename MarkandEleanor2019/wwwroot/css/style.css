@@ -106,3 +106,8 @@ h2 {
     font-size: 15px;
     color: #747474;
 }
+
+#rsvpForm{
+    max-width:600px;
+    margin:0 auto;
+}
