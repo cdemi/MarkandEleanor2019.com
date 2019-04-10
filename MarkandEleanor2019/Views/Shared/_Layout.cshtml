@@ -10,10 +10,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e35c56">
-    <meta name="apple-mobile-web-app-title" content="Mark and Eleanor 2019">
-    <meta name="application-name" content="#MarkAndEleanor2019">
-    <meta name="theme-color" content="#e35c56">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e9818c">
+    <meta name="msapplication-TileColor" content="#e9818c">
+    <meta name="theme-color" content="#e9818c">
+
     <meta name="description" content="Mark and Eleanor are tying the knot! Join us on the 11th of May, 2019 to celebrate their marriage.">
     <meta name="og:image" content="@Url.AbsoluteContent("/images/bannerHero2.jpg")">
 
@@ -58,6 +58,25 @@
 
         ga('create', 'UA-75438054-4', 'auto');
         ga('send', 'pageview');
+    </script>
+    <script>
+        // This is the "Offline copy of pages" service worker
+        // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+        // Check compatibility for the browser we're running this in
+        if ("serviceWorker" in navigator) {
+          if (navigator.serviceWorker.controller) {
+            console.log("[PWA Builder] active service worker found, no need to register");
+          } else {
+            // Register the service worker
+            navigator.serviceWorker
+              .register("pwabuilder-sw.js", {
+                scope: "./"
+              })
+              .then(function (reg) {
+                console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+              });
+          }
+        }
     </script>
 </body>
 </html>
