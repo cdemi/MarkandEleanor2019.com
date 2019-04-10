@@ -32,7 +32,7 @@
     },
     {
       "provider": "cdnjs",
-      "library": "jquery@3.3.1",
+      "library": "jquery@3.4.0",
       "destination": "wwwroot/lib/jquery/"
     }
   ]
