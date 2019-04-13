@@ -1,6 +1,7 @@
 <div id="heroBanner">
     <header></header>
     <nav>
+
     </nav>
     <h1 id="siteName">
         Mark &amp; Eleanor
@@ -9,25 +10,29 @@
         &nbsp;
     </div>
     <div id="rsvpButton">
-        <!--<a href="#">RSVP</a>--> <a href="~/calendar.ics" target="_blank">Add to Calendar</a>
+        <!--<a href="#">RSVP</a>--> <a href="~/calendar.ics" target="_blank">📅 Add to Calendar</a>
     </div>
 </div>
 <div class="content">
     <div id="map">
         <h2>Where</h2>
         <div id="googleMap" style="height: 95vh;">
+
         </div>
     </div>
 </div>
 <div id="hashTag">
-    <h2>#MarkAndEleanor2019</h2>
-    <input type="file" multiple id="photoUpload" accept="image/*" />
+    <a href="https://www.instagram.com/explore/tags/markandeleanor2019/" target="_blank">#MarkAndEleanor2019</a>
+<!--    <script src="//assets.juicer.io/embed.js" type="text/javascript"></script>
+    <link href="//assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+    <ul class="juicer-feed" data-feed-id="mark-eleanor-2019"></ul>-->
 </div>
+
 @section Scripts
     {
     <script>
         $(document).ready(function () {
-            var weddingDate = moment.tz("2019-05-11 18:30", "Europe/Malta");
+            var weddingDate = moment.tz("2019-05-11 16:00", "Europe/Malta");
             $("#heroBanner #counter").countdown(weddingDate.toDate(), {
                 elapse: true,
                 //precision: 60000
@@ -49,12 +54,12 @@
                 {
                     position: new google.maps.LatLng(35.826891, 14.527366),
                     markerUrl: "@Url.Content("~/images/map_markers/church-min.png")",
-                    info: '<h1>Birżebbuġa Parish Church</h1><h2>Ceremony</h2>Starts at 16:30.<br/><a href="https://www.google.com/maps/dir/Current+Location/Birżebbuġa Parish Church" target="_blank">How to get there</a>'
+                    info: '<h1>Birżebbuġa Parish Church</h1><h2>Ceremony</h2>Starts at 16:00.<br/><a href="https://www.google.com/maps/dir/?api=1&destination_place_id=ChIJ793Dp8lbDhMRhmOjPYD_ZlA&destination=Parish%20Church%20of%20St%20Peter%27s%20Chains%2C%20Sajjied%2C%20Bir%C5%BCebbu%C4%A1a" target="_blank">How to get there</a>'
                 },
                 {
                     position: new google.maps.LatLng(35.858748, 14.397613),
                     markerUrl: "@Url.Content("~/images/map_markers/cake-min.png")",
-                    info: '<h1>Chateau Buskett</h1><h2>Reception</h2>Starts at 18:00.<br/><a href="https://www.google.com/maps/dir/Current+Location/Chateau Buskett" target="_blank">How to get there</a>'
+                    info: '<h1>Chateau Buskett</h1><h2>Reception</h2>Starts at 18:30.<br/><a href="https://www.google.com/maps/dir/?api=1&destination_place_id=ChIJmSgIzHNRDhMRcZxYSn_F7Xc&destination=Chateau%20Buskett%2C%20Triq%20IL-Buskett%2C%20Siggiewi" target="_blank">How to get there</a>'
                 }
             ];
             var church = { lat: 35.826891, lng: 14.527366 };
@@ -62,8 +67,8 @@
                 zoom: 16,
                 streetViewControl: false,
                 mapTypeControl: false,
-                gestureHandling: 'none',
-                zoomControl: false,
+                //gestureHandling: 'none',
+                //zoomControl: false,
                 disableDefaultUI: true,
                 styles: [
                     {
@@ -286,31 +291,7 @@
             });
         }
     </script>
+
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDfhHqLShp8XL0-J4hHQ6wuZB3fdkLeSQ&callback=initMap"></script>
-    <script>
-        const account = {
-            name: "markandeleanorphotos",
-            sas: "?sv=2018-03-28&ss=bt&srt=sco&sp=rwlac&se=2020-02-16T20:33:38Z&st=2019-02-16T12:33:38Z&spr=https&sig=SqNTdYMZ8N5LdecJzQ%2Fev0NOIdDM426c29M5cGV8CtQ%3D"
-        };
 
-        const blobUri = 'https://' + account.name + '.blob.core.windows.net';
-        const blobService = AzureStorage.Blob.createBlobServiceWithSas(blobUri, account.sas);
-
-        document.getElementById('photoUpload').addEventListener('change', function () {
-            for (var i = 0; i < this.files.length; i++) {
-                var file = this.files[i];
-
-                blobService.createBlockBlobFromBrowserFile('photos',
-                    file.name,
-                    file,
-                    (error, result) => {
-                        if (error) {
-                            // Handle blob error
-                        } else {
-                            console.log('Upload is successful');
-                        }
-                    });
-            }
-        }, false);
-    </script>
 }

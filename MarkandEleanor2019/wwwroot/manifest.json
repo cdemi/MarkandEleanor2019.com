@@ -1,5 +1,6 @@
 {
-    "name": "Mark and Eleanor 2019",
+    "name": "#MarkAndEleanor2019",
+    "short_name": "#MarkAndEleanor2019",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -12,6 +13,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#e35c56",
-    "background_color": "#e35c56"
+    "theme_color": "#e9818c",
+    "background_color": "#e9818c",
+    "start_url": "https://www.markandeleanor2019.com/",
+    "display": "standalone"
 }

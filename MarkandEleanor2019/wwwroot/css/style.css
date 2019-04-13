@@ -55,6 +55,8 @@
             -o-transition: all 0.5s ease 0s;
             transition: all 0.5s ease 0s;
             text-decoration: none;
+            width: 150px;
+            text-align: center;
         }
 
             #heroBanner #rsvpButton a:hover {
@@ -70,6 +72,19 @@
 
     #hashTag .j-stack > li.feed-item.juicer.image-post:not(.instagram):not(.facebook) {
         display: none;
+    }
+
+    #hashTag a {
+        display: block;
+        text-align: center;
+        color: #ffffff;
+        background-color: #E9818C;
+        margin: 0;
+        padding: 25px;
+        font-size: 26pt;
+        font-family: 'Roboto Slab', serif;
+        text-decoration: none;
+        font-weight:bold;
     }
 
 
@@ -91,18 +106,20 @@ h2 {
 .gm-style-iw {
     cursor: text;
 }
-.gm-style-iw h1, .gm-style-iw h2 {
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    background-color: transparent;
-}
-.gm-style-iw h1 {
-    font-size: 16px;
-    color: #E9818C;
-}
 
-.gm-style-iw h2 {
-    font-size: 15px;
-    color: #747474;
-}
+    .gm-style-iw h1, .gm-style-iw h2 {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        background-color: transparent;
+    }
+
+    .gm-style-iw h1 {
+        font-size: 16px;
+        color: #E9818C;
+    }
+
+    .gm-style-iw h2 {
+        font-size: 15px;
+        color: #747474;
+    }
