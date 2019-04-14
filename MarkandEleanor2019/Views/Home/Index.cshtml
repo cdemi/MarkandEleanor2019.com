@@ -30,6 +30,7 @@
         <input type="file" multiple id="photoUpload" accept="image/*,video/*" />
 
     </div>
+    <a asp-action="Index" asp-controller="Gallery">View all Photos</a>
 </div>
 
 @section Scripts
@@ -325,7 +326,7 @@
                     file,
                     (error, result) => {
                         if (error) {
-                            // Handle blob error
+                            console.error(error);
                         } else {
                             console.log('Upload is successful');
                             filesUploaded++;
