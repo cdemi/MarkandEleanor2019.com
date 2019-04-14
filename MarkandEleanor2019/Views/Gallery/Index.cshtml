@@ -33,7 +33,7 @@
                 } else {
                     console.log(result);
                     for (var blob of result.entries) {
-                        $("#photos").append("<a href='https://photos.markandeleanor2019.com/" + blob.name + "'><img loading='lazy' src='https://photos.markandeleanor2019.com/thumbs/" + blob.name + "'/></a>");
+                        $("#photos").append("<a href='https://photos.markandeleanor2019.com/" + blob.name + "'><img loading='lazy' width='200' height='200' src='https://photos.markandeleanor2019.com/thumbs/" + blob.name + "'/></a>");
                     }
                     $('#photos a').simpleLightbox();
                 }
