@@ -131,6 +131,10 @@ h2 {
     text-align: center;
 }
 
+img {
+    
+image-orientation: from-image;
+    }
 
 .heart-loader {
     background-color: #f44336;
