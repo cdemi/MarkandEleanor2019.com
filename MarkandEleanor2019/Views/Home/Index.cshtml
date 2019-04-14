@@ -319,7 +319,7 @@
                 var filename = file.name.substring(0, file.name.lastIndexOf('.'));
                 var ext = file.name.substring(file.name.lastIndexOf('.'));
 
-                var blobname = filename + '_' + Math.random().toString(16).slice(2) + ext;
+                var blobname = Date.now() + '_' + filename + '_' + Math.random().toString(16).slice(2) + ext;
 
                 blobService.createBlockBlobFromBrowserFile('$root',
                     blobname,
