@@ -84,7 +84,7 @@
         font-size: 26pt;
         font-family: 'Roboto Slab', serif;
         text-decoration: none;
-        font-weight:bold;
+        font-weight: bold;
     }
 
 
@@ -123,3 +123,9 @@ h2 {
         font-size: 15px;
         color: #747474;
     }
+
+
+#photos {
+    line-height: 0;
+    text-align: center;
+}
