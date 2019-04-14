@@ -1,0 +1,43 @@
+<div>
+    <h2>Photo Gallery</h2>
+
+    <div id="photos">
+
+    </div>
+</div>
+
+
+@section Head
+    {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.1/simplelightbox.min.css" integrity="sha256-RxbFRaEchWYC1LsOatZ6Rb6g+52pFSHe0QURBarnTKQ=" crossorigin="anonymous" />}
+
+@section Scripts
+    {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.1/simple-lightbox.min.js" integrity="sha256-94yOmoFMo+cACakZdkeOe9Du9cN7odiEBHJxYArZ5uY=" crossorigin="anonymous"></script>
+    <script>
+        const account = {
+            name: "markandeleanorphotos",
+            sas: "?sv=2018-03-28&ss=bt&srt=sco&sp=rwlac&se=2020-02-16T20:33:38Z&st=2019-02-16T12:33:38Z&spr=https&sig=SqNTdYMZ8N5LdecJzQ%2Fev0NOIdDM426c29M5cGV8CtQ%3D"
+        };
+
+        var filesUploaded = 0;
+
+        const blobUri = 'https://' + account.name + '.blob.core.windows.net';
+        const blobService = AzureStorage.Blob.createBlobServiceWithSas(blobUri, account.sas);
+
+        $(document).ready(function () {
+            
+            blobService.listBlobsSegmented("thumbs", null, (error, result) => {
+                if (error) {
+                    console.error(error);
+                } else {
+                    console.log(result);
+                    for (var blob of result.entries) {
+                        $("#photos").append("<a href='https://photos.markandeleanor2019.com/" + blob.name + "'><img loading='lazy' src='https://photos.markandeleanor2019.com/thumbs/" + blob.name + "'/></a>");
+                    }
+                    $('#photos a').simpleLightbox();
+                }
+            });
+        });
+    </script>
+}

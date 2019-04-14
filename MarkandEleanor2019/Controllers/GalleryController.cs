@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MarkandEleanor2019.Controllers
 {
-    public class HomeController : Controller
+    public class GalleryController : Controller
     {
         public IActionResult Index()
         {

@@ -28,6 +28,7 @@
     <environment names="Staging,Production">
         <link href="~/css/style.min.css" rel="stylesheet" asp-append-version="true" />
     </environment>
+    @RenderSection("Head", required: false)
 
     @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
