@@ -309,8 +309,13 @@
             for (var i = 0; i < this.files.length; i++) {
                 var file = this.files[i];
 
+                var filename = file.name.substring(0, file.name.lastIndexOf('.'));
+                var ext = file.name.substring(file.name.lastIndexOf('.'));
+ 
+                var blobname = filename + '_' + Math.random().toString(16).slice(2) + ext;
+
                 blobService.createBlockBlobFromBrowserFile('$root',
-                    file.name,
+                    blobname,
                     file,
                     (error, result) => {
                         if (error) {
