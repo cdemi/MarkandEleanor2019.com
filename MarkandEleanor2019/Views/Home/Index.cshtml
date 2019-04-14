@@ -23,8 +23,13 @@
 </div>
 <div id="hashTag">
     <a href="https://www.instagram.com/explore/tags/markandeleanor2019/" target="_blank">#MarkAndEleanor2019</a>
-    <div id="photoUploadProgress"></div>
-    <input type="file" multiple id="photoUpload" accept="image/*,video/*" />
+    <div id="photoUploadLoader" class="heart-loader" style="display:none"></div><div id="photoUploadProgress"></div>
+
+    <div class="upload-btn-wrapper">
+        <button class="btn">Upload your photos here!</button>
+        <input type="file" multiple id="photoUpload" accept="image/*,video/*" />
+
+    </div>
 </div>
 
 @section Scripts
@@ -306,12 +311,13 @@
 
         document.getElementById('photoUpload').addEventListener('change', function () {
             document.getElementById('photoUploadProgress').innerHTML = "Uploading... ";
+            $('#photoUploadLoader').show();
             for (var i = 0; i < this.files.length; i++) {
                 var file = this.files[i];
 
                 var filename = file.name.substring(0, file.name.lastIndexOf('.'));
                 var ext = file.name.substring(file.name.lastIndexOf('.'));
- 
+
                 var blobname = filename + '_' + Math.random().toString(16).slice(2) + ext;
 
                 blobService.createBlockBlobFromBrowserFile('$root',
@@ -323,10 +329,13 @@
                         } else {
                             console.log('Upload is successful');
                             filesUploaded++;
-                            if (filesUploaded<this.files.length)
+                            if (filesUploaded < this.files.length)
                                 document.getElementById('photoUploadProgress').innerHTML = "Uploading... " + (filesUploaded) + "/" + this.files.length + " uploaded";
-                            else
-                                document.getElementById('photoUploadProgress').innerHTML = (filesUploaded) + "/" + this.files.length + " uploaded";
+                            else {
+                                document.getElementById('photoUploadProgress').innerHTML = " All files uploaded! " + (filesUploaded) + "/" + this.files.length;
+                                $('#photoUploadLoader').hide();
+                                filesUploaded = 0;
+                            }
                         }
                     });
             }
