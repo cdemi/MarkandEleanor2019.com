@@ -34,7 +34,7 @@
                 console.error(error);
             } else {
                 console.log(result);
-                $("#photos").html();
+                $("#photos").html("");
                 for (var blob of result.entries) {
                     $("#photos").append("<a data-fancybox='gallery' href='https://photos.markandeleanor2019.com/" + blob.name + "'><img loading='lazy' width='200' height='200' src='https://photos.markandeleanor2019.com/thumbs/" + blob.name + "'/></a>");
                 }
