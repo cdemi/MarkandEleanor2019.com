@@ -227,9 +227,9 @@ h2 {
 }
 
 .btn {
-    border: 2px solid gray;
-    color: gray;
-    background-color: white;
+    border: 2px solid #E9818C;
+    color: #fff;
+    background-color: #E9818C;
     padding: 8px 20px;
     border-radius: 8px;
     font-size: 20px;

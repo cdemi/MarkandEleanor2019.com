@@ -23,13 +23,16 @@
 </div>
 <div id="hashTag">
     <a href="https://www.instagram.com/explore/tags/markandeleanor2019/" target="_blank">#MarkAndEleanor2019</a>
-    <div id="photoUploadLoader" class="heart-loader" style="display:none"></div><div id="photoUploadProgress"></div>
-
-    <div class="upload-btn-wrapper">
-        <button class="btn">Upload your photos here!</button>
-        <input type="file" multiple id="photoUpload" accept="image/*,video/*" />
-
+    <div style="padding:50px; text-align:center">
+        <div id="photoUploadLoader" class="heart-loader" style="display: none; margin: 0 auto;"></div>
+        <div id="photoUploadProgress" style="display:none; padding: 20px 0;"></div>
+        <div class="upload-btn-wrapper">
+            <button class="btn">Upload your photos here!</button>
+            <input type="file" multiple id="photoUpload" accept="image/*,video/*" />
+        </div>
     </div>
+
+    
     <a asp-action="Index" asp-controller="Gallery">View all Photos</a>
 </div>
 
@@ -313,6 +316,7 @@
         document.getElementById('photoUpload').addEventListener('change', function () {
             document.getElementById('photoUploadProgress').innerHTML = "Uploading... ";
             $('#photoUploadLoader').show();
+            $("#photoUploadProgress").show();
             for (var i = 0; i < this.files.length; i++) {
                 var file = this.files[i];
 
@@ -333,7 +337,7 @@
                             if (filesUploaded < this.files.length)
                                 document.getElementById('photoUploadProgress').innerHTML = "Uploading... " + (filesUploaded) + "/" + this.files.length + " uploaded";
                             else {
-                                document.getElementById('photoUploadProgress').innerHTML = " All files uploaded! " + (filesUploaded) + "/" + this.files.length;
+                                document.getElementById('photoUploadProgress').innerHTML = "All files (" + (filesUploaded) + "/" + this.files.length + ") uploaded! <br/> Photos may take up to 10 minutes to show on the website";
                                 $('#photoUploadLoader').hide();
                                 filesUploaded = 0;
                             }
