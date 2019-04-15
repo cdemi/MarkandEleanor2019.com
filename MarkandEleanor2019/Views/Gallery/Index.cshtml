@@ -2,56 +2,62 @@
     <h2>Photo Gallery</h2>
 
     <div id="photos">
-        <div id="photoUploadLoader" class="heart-loader"></div>
+        <div style="position: fixed; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">
+            <div id="photoUploadLoader" class="heart-loader"></div>
+        </div>
     </div>
 </div>
 
 
 @section Head
     {
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" />
 }
 @section Scripts
     {
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-<script>
-    $.fancybox.defaults.hash = false;
-    const account = {
-        name: "markandeleanorphotos",
-        sas: "?sv=2018-03-28&ss=bt&srt=sco&sp=rwlac&se=2020-02-16T20:33:38Z&st=2019-02-16T12:33:38Z&spr=https&sig=SqNTdYMZ8N5LdecJzQ%2Fev0NOIdDM426c29M5cGV8CtQ%3D"
-    };
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+    <script>
+        $.fancybox.defaults.hash = false;
+        const account = {
+            name: "markandeleanorphotos",
+            sas: "?sv=2018-03-28&ss=bt&srt=sco&sp=rwlac&se=2020-02-16T20:33:38Z&st=2019-02-16T12:33:38Z&spr=https&sig=SqNTdYMZ8N5LdecJzQ%2Fev0NOIdDM426c29M5cGV8CtQ%3D"
+        };
 
-    var filesUploaded = 0;
+        var filesUploaded = 0;
 
-    const blobUri = 'https://' + account.name + '.blob.core.windows.net';
-    const blobService = AzureStorage.Blob.createBlobServiceWithSas(blobUri, account.sas);
+        const blobUri = 'https://' + account.name + '.blob.core.windows.net';
+        const blobService = AzureStorage.Blob.createBlobServiceWithSas(blobUri, account.sas);
 
-    $(document).ready(function () {
+        $(document).ready(function () {
 
 
 
-        blobService.listBlobsSegmented("thumbs", null, (error, result) => {
-            if (error) {
-                console.error(error);
-            } else {
-                console.log(result);
-                $("#photos").html("");
-                for (var blob of result.entries) {
-                    $("#photos").prepend("<a data-fancybox='gallery' href='https://photos.markandeleanor2019.com/full/" + blob.name + "'><img loading='lazy' width='200' height='200' src='https://photos.markandeleanor2019.com/thumbs/" + blob.name + "'/></a>");
+            blobService.listBlobsSegmented("thumbs", null, (error, result) => {
+                if (error) {
+                    console.error(error);
+                } else {
+                    console.log(result);
+                    $("#photos").html("");
+                    for (var blob of result.entries) {
+                        $("#photos").prepend("<a data-fancybox='gallery' href='https://photos.markandeleanor2019.com/full/" + blob.name + "'><img loading='lazy' width='200' height='200' src='https://photos.markandeleanor2019.com/thumbs/" + blob.name + "'/></a>");
+                    }
+
+                    $('[data-fancybox="gallery"]').fancybox({
+                        buttons: [
+                            "zoom",
+                            "download",
+                            "thumbs",
+                            "fullScreen",
+                            "close"
+                        ],
+                        transitionEffect: "slide",
+                    });
+
+                    $("#photos a").each(function (i) {
+                        $(this).css({"transform": "rotate("+ ((Math.random() * 20) -10) + "deg) scale("+ (Math.random()+0.5) +")"});
+                    });
                 }
-
-                $('[data-fancybox="gallery"]').fancybox({
-                    buttons: [
-                        "zoom",
-                        "download",
-                        "thumbs",
-                        "fullScreen",
-                        "close"
-                    ],
-                    transitionEffect: "slide",
-                });
-            }
+            });
         });
-    });
-</script>
+    </script>
 }
