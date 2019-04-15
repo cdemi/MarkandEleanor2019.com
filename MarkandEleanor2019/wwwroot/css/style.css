@@ -142,10 +142,12 @@ h2 {
         box-shadow: 3px 3px 22px 7px rgba(0,0,0,0.3);
     }
 
-img {
-    
-image-orientation: from-image;
-    }
+        #photos a img {
+            width: 38vw;
+            height: 38vw;
+            max-width: 200px;
+            max-height: 200px;
+        }
 
 .heart-loader {
     background-color: #e9818c;
