@@ -133,7 +133,6 @@ h2 {
     align-items: flex-start;
     flex-direction: row;
     justify-content: center;
-    overflow: hidden;
 }
 
     #photos a {
