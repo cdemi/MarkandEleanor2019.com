@@ -7,6 +7,22 @@
     background: url("../images/bg.png");
 }
 
+.backButton {
+    display: block;
+    border: 2px solid #E9818C;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #E9818C;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
 #heroBanner {
     width: 100%;
     height: 100vh;

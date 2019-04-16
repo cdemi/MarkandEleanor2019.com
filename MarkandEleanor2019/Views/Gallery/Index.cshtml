@@ -1,19 +1,16 @@
 <h2>🖼️ Photo Gallery</h2>
-<div>
+<div style="padding: 20px;">
     <form asp-action="Photos" method="post">
         <input type="password" placeholder="Password" name="password" autofocus /><br/>
         <input type="submit" value="Login" />
     </form>
+    <a asp-action="Index" asp-controller="Home" class="backButton">🔙 Back</a>
 </div>
 
 @section Head
     {
 
 <style>
-    form {
-        padding: 20px;
-    }
-
         form input[type=password] {
             border: 2px solid #E9818C;
             color: #E9818C;
@@ -38,5 +35,7 @@
             width: 100%;
             box-sizing: border-box;
         }
+
+        
 </style>
 }
