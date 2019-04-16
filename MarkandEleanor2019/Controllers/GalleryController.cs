@@ -17,8 +17,14 @@ namespace MarkandEleanor2019.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Photos()
+        {
+            return RedirectToAction("Index");
+        }
+
         [HttpPost]
-        //[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public IActionResult Photos(string password)
         {
             if (password != null && password.Equals(configuration.GetValue<string>("GalleryPassword")))
