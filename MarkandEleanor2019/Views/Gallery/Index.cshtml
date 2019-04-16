@@ -54,7 +54,16 @@
                     });
 
                     $("#photos a").each(function (i) {
-                        $(this).css({"transform": "rotate("+ ((Math.random() * 20) -10) + "deg) scale("+ (Math.random()+0.5) +")"});
+                        var scale = (Math.random() + 0.5);
+
+                        var ratio = 22/1000;
+
+                        $(this).css({
+                            "transform": "rotate(" + ((Math.random() * 20) - 10) + "deg) scale(" + (scale) + ")",
+                            "position": "relative",
+                            "z-index": Math.floor(scale * 1000),
+                            "box-shadow": "3px 3px "+ (22*scale) +"px "+ (7*scale) +"px rgba(0,0,0,"+ (1-(0.4*scale)) +")"
+                        });
                     });
                 }
             });
