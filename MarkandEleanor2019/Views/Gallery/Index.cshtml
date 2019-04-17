@@ -1,0 +1,41 @@
+<h2>🖼️ Photo Gallery</h2>
+<div style="padding: 20px;">
+    <form asp-action="Photos" method="post">
+        <input type="password" placeholder="Password" name="password" autofocus /><br/>
+        <input type="submit" value="Login" />
+    </form>
+    <a asp-action="Index" asp-controller="Home" class="backButton">Back</a>
+</div>
+
+@section Head
+    {
+
+<style>
+        form input[type=password] {
+            border: 2px solid #E9818C;
+            color: #E9818C;
+            background-color: #fff;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        form input[type=submit] {
+            border: 2px solid #E9818C;
+            color: #fff;
+            background-color: #E9818C;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        
+</style>
+}
