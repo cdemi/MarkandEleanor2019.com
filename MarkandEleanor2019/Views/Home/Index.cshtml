@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    
+
     <a asp-action="Index" asp-controller="Gallery">View all Photos</a>
 </div>
 
@@ -329,8 +329,10 @@
                     blobname,
                     file,
                     {
-                        "contentSettings.contentDisposition": "attachment",
-                        "contentSettings.cacheControl":"public, max-age=31536000"
+                        contentSettings: {
+                            contentDisposition: "attachment",
+                            cacheControl: "public, max-age=31536000"
+                        }
                     },
                     (error, result) => {
                         if (error) {
