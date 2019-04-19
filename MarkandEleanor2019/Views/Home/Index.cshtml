@@ -312,6 +312,7 @@
 
         const blobUri = 'https://' + account.name + '.blob.core.windows.net';
         const blobService = AzureStorage.Blob.createBlobServiceWithSas(blobUri, account.sas);
+        blobService.setServiceProperties({ "DefaultServiceVersion": "2015-12-11" }, function () { });
 
         document.getElementById('photoUpload').addEventListener('change', function () {
             document.getElementById('photoUploadProgress').innerHTML = "Uploading... ";
