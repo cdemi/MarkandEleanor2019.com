@@ -55,9 +55,10 @@
                         transitionEffect: "slide",
                         afterShow: function (event, instance) {
                             var download = instance.opts.$orig.data('fancybox-download');
+                            var $container = event.$refs.container;
+                            $container.find('[data-fancybox-download]').attr('target', '_blank');
 
                             if (download) {
-                                var $container = event.$refs.container;
                                 $container.find('[data-fancybox-download]').attr('href', download);
                             }
                         }
