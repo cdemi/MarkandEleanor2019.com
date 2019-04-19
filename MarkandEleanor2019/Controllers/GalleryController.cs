@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using System;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace MarkandEleanor2019.Controllers
 {
@@ -24,13 +27,22 @@ namespace MarkandEleanor2019.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public IActionResult Photos(string password)
         {
-            if (password != null && password.Equals(configuration.GetValue<string>("GalleryPassword")))
+            if (isPasswordCorrect(password))
                 return View();
             else
                 return RedirectToAction("Index");
+        }
+
+        private bool isPasswordCorrect(string password)
+        {
+            return password != null && sanitizePassword(password).Equals(sanitizePassword(configuration.GetValue<string>("GalleryPassword")), StringComparison.InvariantCultureIgnoreCase);
+        }
+
+        private string sanitizePassword(string password)
+        {
+            return String.Join("", Regex.Matches(password, "\\w").Select(r => r.Value));
         }
     }
 }
