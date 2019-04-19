@@ -41,7 +41,7 @@
                     console.log(result);
                     $("#photos").html("");
                     for (var blob of result.entries) {
-                        $("#photos").prepend("<a data-fancybox='gallery' href='https://photos.markandeleanor2019.com/full/" + blob.name + "'><img loading='lazy' width='200' height='200' src='https://photos.markandeleanor2019.com/thumbs/" + blob.name + "'/></a>");
+                        $("#photos").prepend("<a data-fancybox='gallery' data-fancybox-download='https://photos.markandeleanor2019.com/" + blob.name + "' href='https://photos.markandeleanor2019.com/full/" + blob.name + "'><img loading='lazy' width='200' height='200' src='https://photos.markandeleanor2019.com/thumbs/" + blob.name + "'/></a>");
                     }
 
                     $('[data-fancybox="gallery"]').fancybox({
@@ -53,18 +53,26 @@
                             "close"
                         ],
                         transitionEffect: "slide",
+                        afterShow: function (event, instance) {
+                            var download = instance.opts.$orig.data('fancybox-download');
+
+                            if (download) {
+                                var $container = event.$refs.container;
+                                $container.find('[data-fancybox-download]').attr('href', download);
+                            }
+                        }
                     });
 
                     $("#photos a").each(function (i) {
                         var scale = (Math.random() + 0.5);
 
-                        var ratio = 22/1000;
+                        var ratio = 22 / 1000;
 
                         $(this).css({
                             "transform": "rotate(" + ((Math.random() * 20) - 10) + "deg) scale(" + (scale) + ")",
                             "position": "relative",
                             "z-index": Math.floor(scale * 1000),
-                            "box-shadow": "3px 3px "+ (22*scale) +"px "+ (7*scale) +"px rgba(0,0,0,"+ (1-(0.4*scale)) +")"
+                            "box-shadow": "3px 3px " + (22 * scale) + "px " + (7 * scale) + "px rgba(0,0,0," + (1 - (0.4 * scale)) + ")"
                         });
                     });
                 }

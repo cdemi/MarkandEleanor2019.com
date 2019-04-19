@@ -328,6 +328,10 @@
                 blobService.createBlockBlobFromBrowserFile('$root',
                     blobname,
                     file,
+                    {
+                        "options.contentSettings.contentDisposition": "attachment",
+                        "options.contentSettings.cacheControl":"public, max-age=31536000"
+                    },
                     (error, result) => {
                         if (error) {
                             console.error(error);
