@@ -17,13 +17,13 @@ namespace MarkandEleanor2019.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("Photos");
         }
 
         [HttpGet]
         public IActionResult Photos()
         {
-            return RedirectToAction("Index");
+            return View();
         }
 
         [HttpPost]
