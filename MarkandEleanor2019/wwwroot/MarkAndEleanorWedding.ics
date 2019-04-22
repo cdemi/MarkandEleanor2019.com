@@ -13,10 +13,12 @@ DTSTAMP:20170827T102012Z
 UID:0sptda3grm82ra9q308pcb16a0@google.com
 CREATED:20170827T101858Z
 LAST-MODIFIED:20170827T101859Z
-LOCATION:Parish Church of St Peter in Chains, Birżebbuġa
+LOCATION:Parish Church of St Peter in Chains\, Birżebbuġa
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:Mark and Eleanor's Wedding Ceremony
+DESCRIPTION:Mark and Eleanor's Wedding Ceremony #MarkAndEl https://www.markandeleanor2019.com/
+ORGANIZER: Mark and Eleanor
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -31,6 +33,7 @@ DTSTAMP:20170827T102012Z
 UID:50j9mbi5rtl1e851g92fi77qv5@google.com
 CREATED:20170827T102005Z
 DESCRIPTION: Mark and Eleanor's Wedding Reception #MarkAndEl https://www.markandeleanor2019.com/
+ORGANIZER: Mark and Eleanor
 LAST-MODIFIED:20170827T102005Z
 LOCATION:Chateau Buskett
 SEQUENCE:0
@@ -38,6 +41,7 @@ STATUS:CONFIRMED
 SUMMARY:Mark and Eleanor's Wedding Reception
 TRANSP:OPAQUE
 BEGIN:VALARM
+DESCRIPTION:Mark and Eleanor's Wedding Ceremony #MarkAndEl https://www.markandeleanor2019.com/
 ACTION:DISPLAY
 TRIGGER:-P0DT4H0M0S
 END:VALARM
