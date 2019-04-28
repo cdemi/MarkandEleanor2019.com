@@ -34,14 +34,14 @@
 
 
 
-            blobService.listBlobsSegmented("thumbs", null, (error, result) => {
+            blobService.listBlobsSegmented("$root", null, (error, result) => {
                 if (error) {
                     console.error(error);
                 } else {
                     console.log(result);
                     $("#photos").html("");
                     for (var blob of result.entries) {
-                        $("#photos").prepend("<a data-fancybox='gallery' data-fancybox-download='https://photos.markandeleanor2019.com/" + blob.name + "' href='https://photos.markandeleanor2019.com/full/" + blob.name + "'><img loading='lazy' width='200' height='200' src='https://photos.markandeleanor2019.com/thumbs/" + blob.name + "'/></a>");
+                        $("#photos").prepend("<a data-fancybox='gallery' data-fancybox-download='https://photos.markandeleanor2019.com/" + blob.name + "' href='https://images.weserv.nl/?url=https://photos.markandeleanor2019.com/" + blob.name + "&w=1920&h=1080&dpr=3'><img loading='lazy' width='200' height='200' src='https://images.weserv.nl/?url=https://photos.markandeleanor2019.com/" + blob.name + "&w=200&h=200&t=square&dpr=3'/></a>");
                     }
 
                     $('[data-fancybox="gallery"]').fancybox({
