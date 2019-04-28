@@ -30,21 +30,44 @@ self.addEventListener("install", function (event) {
 self.addEventListener("fetch", function (event) {
     if (event.request.method !== "GET") return;
 
-    event.respondWith(
-        fetch(event.request)
-            .then(function (response) {
-                console.log("[PWA Builder] add page to offline cache: " + response.url);
+    if (event.request.url.startsWith("https://markandeleanorphotos.blob.core.windows.net/$root?restype=container&comp=list&_=")) {
+        event.respondWith(
+            fetch(event.request)
+                .then(function (response) {
+                    var newRequest = new Request("https://markandeleanorphotos.blob.core.windows.net/$root?restype=container&comp=list");
 
-                // If request was success, add or update it in the cache
-                event.waitUntil(updateCache(event.request, response.clone()));
+                    console.log("[PWA Builder/AzureHack] caching images from Azure: " + response.url);
+                    // If request was success, add or update it in the cache
+                    event.waitUntil(updateCache(newRequest, response.clone()));
 
-                return response;
-            })
-            .catch(function (error) {
-                console.log("[PWA Builder] Network request Failed. Serving content from cache: " + error);
-                return fromCache(event.request);
-            })
-    );
+                    return response;
+                })
+                .catch(function (error) {
+                    console.log("[PWA Builder/AzureHack] Network request Failed. Serving content from cache: " + error);
+                    var newRequest = new Request("https://markandeleanorphotos.blob.core.windows.net/$root?restype=container&comp=list");
+                    return fromCache(newRequest);
+                })
+        );
+    }
+    else {
+        event.respondWith(
+            fetch(event.request)
+                .then(function (response) {
+                    console.log("[PWA Builder] add page to offline cache: " + response.url);
+
+
+
+                    // If request was success, add or update it in the cache
+                    event.waitUntil(updateCache(event.request, response.clone()));
+
+                    return response;
+                })
+                .catch(function (error) {
+                    console.log("[PWA Builder] Network request Failed. Serving content from cache: " + error);
+                    return fromCache(event.request);
+                })
+        );
+    }
 });
 
 function fromCache(request) {
