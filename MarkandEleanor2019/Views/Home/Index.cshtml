@@ -345,7 +345,8 @@
                             if (filesUploaded < this.files.length)
                                 document.getElementById('photoUploadProgress').innerHTML = "Uploading... " + (filesUploaded) + "/" + this.files.length + " uploaded";
                             else {
-                                document.getElementById('photoUploadProgress').innerHTML = "All files (" + (filesUploaded) + "/" + this.files.length + ") uploaded! <br/> Photos may take up to 10 minutes to show on the website";
+                                document.getElementById('photoUploadProgress').innerHTML = "All files (" + (filesUploaded) + "/" + this.files.length + ") uploaded!";
+                                window.location = '@Url.Action("Index", "Gallery")';
                                 $('#photoUploadLoader').hide();
                                 filesUploaded = 0;
                             }
