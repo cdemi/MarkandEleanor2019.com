@@ -16,5 +16,5 @@
     "theme_color": "#e9818c",
     "background_color": "#e9818c",
     "start_url": "https://www.markandeleanor2019.com/",
-    "display": "standalone"
+    "display": "fullscreen"
 }
