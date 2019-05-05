@@ -43,7 +43,7 @@
                     $("#photos").html("");
                     for (var blob of result.entries) {
                         if (blob.contentSettings.contentType.startsWith("image"))
-                            $("#photos").prepend("<a data-fancybox='gallery' data-fancybox-download='https://photos.markandeleanor2019.com/" + blob.name + "' href='https://images.weserv.nl/?url=https://photos.markandeleanor2019.com/" + blob.name + "&w=1920&h=1080&dpr=3'><img loading='lazy' width='200' height='200' src='https://images.weserv.nl/?url=https://photos.markandeleanor2019.com/" + blob.name + "&w=200&h=200&t=square&dpr="+dpr+"'/></a>");
+                            $("#photos").prepend("<a data-fancybox='gallery' data-fancybox-download='https://photos.markandeleanor2019.com/" + blob.name + "' href='https://images.weserv.nl/?url=https://photos.markandeleanor2019.com/" + blob.name + "&w=1920&h=1080&dpr="+dpr+"'><img loading='lazy' width='200' height='200' src='https://images.weserv.nl/?url=https://photos.markandeleanor2019.com/" + blob.name + "&w=200&h=200&t=square&dpr="+dpr+"'/></a>");
                         else
                             console.warn(`Skipping an item that doesn't look like an image: ${blob.name}`);
                     }
