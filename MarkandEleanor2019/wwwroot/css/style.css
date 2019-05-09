@@ -49,6 +49,7 @@
         font-family: 'Roboto Mono', monospace;
         font-size: 8vw;
         padding-top: 12vh;
+        line-height: 1em;
     }
 
     #heroBanner #rsvpButton {
