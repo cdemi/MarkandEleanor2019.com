@@ -41,7 +41,7 @@
                 } else {
                     console.log(result);
                     $("#photos").html("");
-                    var sortedEntries = result.entries.sort((a,b) => { return new Date(b.lastModified) - new Date(a.lastModified) }); 
+                    var sortedEntries = result.entries.sort((a,b) => { return new Date(a.lastModified) - new Date(b.lastModified) }); 
                     for (var blob of sortedEntries) {
                         if (blob.contentSettings.contentType.startsWith("image"))
                             $("#photos").prepend("<a data-fancybox='gallery' data-fancybox-download='https://photos.markandeleanor2019.com/" + blob.name + "' href='https://images.weserv.nl/?url=https://photos.markandeleanor2019.com/" + blob.name + "&w=1280&h=720&q=65&dpr="+dpr+"'><img loading='lazy' width='200' height='200' src='https://images.weserv.nl/?url=https://photos.markandeleanor2019.com/" + blob.name + "&w=200&h=200&q=65&t=square&dpr="+dpr+"'/></a>");
