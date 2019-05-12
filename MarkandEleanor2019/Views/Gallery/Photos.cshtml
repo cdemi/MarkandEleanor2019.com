@@ -45,6 +45,8 @@
                     for (var blob of result.entries) {
                         if (blob.contentSettings.contentType.startsWith("image"))
                             $("#photos").prepend("<a data-fancybox='gallery' data-fancybox-download='https://photos.markandeleanor2019.com/" + blob.name + "' href='https://images.weserv.nl/?url=https://photos.markandeleanor2019.com/" + blob.name + "&w=1280&h=720&q=65&dpr="+dpr+"'><img loading='lazy' width='200' height='200' src='https://images.weserv.nl/?url=https://photos.markandeleanor2019.com/" + blob.name + "&w=200&h=200&q=65&t=square&dpr="+dpr+"'/></a>");
+                        else if (blob.contentSettings.contentType.startsWith("video"))
+                            $("#photos").prepend("<a data-fancybox='gallery' data-fancybox-download='https://photos.markandeleanor2019.com/" + blob.name + "' href='https://photos.markandeleanor2019.com/" + blob.name + "'><img loading='lazy' width='200' height='200' src='/images/video-player.png'/></a>");
                         else
                             console.warn(`Skipping an item that doesn't look like an image: ${blob.name}`);
                     }
@@ -62,9 +64,11 @@
                             var download = instance.opts.$orig.data('fancybox-download');
                             var $container = event.$refs.container;
                             $container.find('[data-fancybox-download]').attr('target', '_blank');
+                            
 
                             if (download) {
                                 $container.find('[data-fancybox-download]').attr('href', download);
+                                $container.find('[data-fancybox-download]').show();
                             }
                         }
                     });
