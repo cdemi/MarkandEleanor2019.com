@@ -171,8 +171,6 @@
             /*box-shadow: 3px 3px 22px 7px rgba(0,0,0,0.3);*/
             position: relative;
             transition: all ease-in-out 0.25s;
-            width: 200px;
-            height: 200px;
         }
 
             #photos a:hover {
